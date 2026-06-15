@@ -3,48 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jing Gan — Data & AI</title>
+  <title>Jing Gan — Data Analytics Leader</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>Jing Gan</h1>
-    <p>Data Analytics Leader · AI Engineer · Fintech</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Jing Gan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="photo-initials">JG</div>
+      </div>
+      <div class="header-text">
+        <h1>Jing Gan</h1>
+        <p class="tagline">Data Analytics Leader &middot; Fintech &middot; AI</p>
+        <div class="header-links">
+          <a href="mailto:jing.gan123@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/jgan/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/ganjingcatherine" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      Manager of Data Analytics at Dave Inc., with 10+ years across fintech, e-commerce, and hardware.
-      Expertise in dbt, SQL, Python, Snowflake, and GCP. Currently building AI agents and RAG applications.
-    </p>
-  </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Biography Writer</h3>
-      <p>AI agent that turns 50 personal questions into a structured life story using Claude.</p>
-    </div>
-    <div class="project-card">
-      <h3>Root Cause Analysis Agent</h3>
-      <p>Automated deep-dive agent for fintech metrics using BigQuery, Python, and causal inference.</p>
-    </div>
-  </section>
+  <main>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jing.gan123@gmail.com">jing.gan123@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/ganjingcatherine" target="_blank">ganjingcatherine</a></p>
-  </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Data analytics leader with 10+ years of experience across fintech, e-commerce, and consumer hardware.
+        Currently Manager of Data Analytics at <strong>Dave Inc.</strong>, leading a team of 6 analysts
+        supporting Finance, Payments, and Growth.
+      </p>
+      <p>
+        I specialize in fintech domain analytics — ACH/debit rails, card onboarding, settlement, payment risk,
+        and LTV modeling. I build predictive models, anomaly detection systems, and executive-level BI, and I'm
+        actively developing AI agents and RAG applications to push the frontier of automated analytics.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Manager, Data Analytics</span>
+            <span class="job-company">Dave Inc.</span>
+          </div>
+          <span class="job-date">2022 – Present</span>
+        </div>
+        <ul>
+          <li>Lead a team of 6 analysts covering Finance, Payments, and Growth analytics.</li>
+          <li>Built predictive models (XGBoost, propensity scoring) for user LTV and payment risk.</li>
+          <li>Owned dbt data warehouse on Snowflake; drove analytics engineering best practices across the team.</li>
+          <li>Designed anomaly detection systems for ACH/debit settlement and card onboarding funnels.</li>
+          <li>Delivered executive-level BI reporting and self-serve dashboards for C-suite stakeholders.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Data Analyst</span>
+            <span class="job-company">Amazon — Lab126</span>
+          </div>
+          <span class="job-date">Prior</span>
+        </div>
+        <ul>
+          <li>Supported hardware product analytics for Lab126 devices including launch metrics and user behavior.</li>
+          <li>Built AWS-based data pipelines for large-scale event data processing.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Data Analyst</span>
+            <span class="job-company">Tesla</span>
+          </div>
+          <span class="job-date">Prior</span>
+        </div>
+        <ul>
+          <li>Developed analytics for manufacturing and supply chain operations.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Data Analyst</span>
+            <span class="job-company">Bloomberg</span>
+          </div>
+          <span class="job-date">Prior</span>
+        </div>
+        <ul>
+          <li>Built financial data analytics and reporting pipelines for global markets data.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Data & Analytics</h4>
+          <ul>
+            <li>dbt (Expert)</li>
+            <li>SQL (Expert)</li>
+            <li>Python</li>
+            <li>Snowflake</li>
+            <li>BigQuery / GCP</li>
+            <li>AWS Data Pipelines</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Machine Learning</h4>
+          <ul>
+            <li>XGBoost / Gradient Boosting</li>
+            <li>Propensity Modeling</li>
+            <li>Anomaly Detection</li>
+            <li>A/B Testing</li>
+            <li>Causal Inference</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Fintech Domain</h4>
+          <ul>
+            <li>ACH / Debit Rails</li>
+            <li>Card Onboarding</li>
+            <li>Payment Risk</li>
+            <li>Settlement Analytics</li>
+            <li>LTV Modeling</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>AI & Tooling</h4>
+          <ul>
+            <li>Claude / Anthropic API</li>
+            <li>RAG Applications</li>
+            <li>AI Agent Development</li>
+            <li>Claude Code</li>
+            <li>GitHub Copilot / Cursor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Biography Writer</h3>
+        <p>AI agent that turns 50 personal questions into a structured life story using Claude and MCP.</p>
+      </div>
+      <div class="project-card">
+        <h3>Root Cause Analysis Agent</h3>
+        <p>Automated deep-dive agent for fintech metrics using BigQuery, Python, and causal inference.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:jing.gan123@gmail.com">jing.gan123@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jgan/" target="_blank">linkedin.com/in/jgan</a></li>
+        <li>GitHub: <a href="https://github.com/ganjingcatherine" target="_blank">github.com/ganjingcatherine</a></li>
+      </ul>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; 2026 Jing Gan</p>
   </footer>
+
 </body>
 </html>
