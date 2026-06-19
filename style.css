@@ -299,6 +299,71 @@ a:hover {
   font-size: 0.88rem;
 }
 
+/* Roadmap */
+.roadmap {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.roadmap-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-left: 2px solid #e0e0e0;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.roadmap-step.completed {
+  border-left-color: #0066cc;
+}
+
+.roadmap-step.current {
+  border-left-color: #0066cc;
+}
+
+.step-marker {
+  position: absolute;
+  left: -1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.roadmap-step.completed .step-marker {
+  background: #0066cc;
+  color: #fff;
+}
+
+.roadmap-step.current .step-marker {
+  background: #fff;
+  border: 2px solid #0066cc;
+  color: #0066cc;
+}
+
+.step-content h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.step-content p {
+  font-size: 0.87rem;
+  color: #555;
+}
+
 /* Footer */
 footer {
   border-top: 1px solid #e0e0e0;
