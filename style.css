@@ -29,8 +29,8 @@ header {
 
 .profile-photo {
   flex-shrink: 0;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   background: #0066cc;
