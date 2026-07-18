@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jing Gan — Projects</title>
+  <meta name="description" content="Projects by Jing Gan — AI agents, fintech data systems, and analytics work spanning Dave Inc., Amazon, and Tesla." />
+  <meta property="og:title" content="Jing Gan — Projects" />
+  <meta property="og:description" content="AI agents, fintech data systems, and analytics work spanning Dave Inc., Amazon, and Tesla." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ganjingcatherine.github.io/personal-website/projects.html" />
+  <meta property="og:image" content="https://ganjingcatherine.github.io/personal-website/working.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,7 +17,7 @@
   <header>
     <div class="header-inner">
       <div class="profile-photo">
-        <img src="profile.jpg" alt="Jing Gan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <img src="working.png" alt="Jing Gan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
         <div class="photo-initials">JG</div>
       </div>
       <div class="header-text">
@@ -30,51 +36,63 @@
     <a href="index.html">Home</a>
     <a href="projects.html" class="active">Projects</a>
     <a href="interests.html">Interests</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
+
+    <img src="images/projects-banner.jpg" class="section-banner" alt="Abstract close-up of code on screen" />
 
     <section>
       <h2>Projects</h2>
 
       <div class="project-card">
-        <div class="project-meta">
-          <span class="project-tag">AI Agent</span>
-          <span class="project-tag">Claude</span>
-          <span class="project-tag">MCP</span>
+        <img src="images/project-biography-writer.jpg" class="project-thumb" alt="Vintage typewriter and notebook" />
+        <div class="project-card-body">
+          <div class="project-meta">
+            <span class="project-tag">AI Agent</span>
+            <span class="project-tag">Claude</span>
+            <span class="project-tag">MCP</span>
+          </div>
+          <h3>Biography Writer</h3>
+          <p>AI agent that turns 50 personal questions into a structured life story using Claude and MCP. Explores long-form narrative generation and memory management across multi-turn conversations.</p>
         </div>
-        <h3>Biography Writer</h3>
-        <p>AI agent that turns 50 personal questions into a structured life story using Claude and MCP. Explores long-form narrative generation and memory management across multi-turn conversations.</p>
       </div>
 
       <div class="project-card">
-        <div class="project-meta">
-          <span class="project-tag">AI Agent</span>
-          <span class="project-tag">BigQuery</span>
-          <span class="project-tag">Python</span>
+        <img src="images/project-root-cause.jpg" class="project-thumb" alt="Analytics dashboard with performance graphs" />
+        <div class="project-card-body">
+          <div class="project-meta">
+            <span class="project-tag">AI Agent</span>
+            <span class="project-tag">BigQuery</span>
+            <span class="project-tag">Python</span>
+          </div>
+          <h3>Root Cause Analysis Agent</h3>
+          <p>Automated deep-dive agent for fintech metrics using BigQuery, Python, and causal inference. Surfaces anomalies and traces drivers across payment funnels without manual investigation.</p>
         </div>
-        <h3>Root Cause Analysis Agent</h3>
-        <p>Automated deep-dive agent for fintech metrics using BigQuery, Python, and causal inference. Surfaces anomalies and traces drivers across payment funnels without manual investigation.</p>
       </div>
 
       <div class="project-card">
-        <div class="project-meta">
-          <span class="project-tag">Dave Inc.</span>
-          <span class="project-tag">System Design</span>
-          <span class="project-tag">Fintech</span>
-          <span class="project-tag">Banking Partnership</span>
+        <img src="images/project-extracash.jpg" class="project-thumb" alt="Close-up of a payment card chip" />
+        <div class="project-card-body">
+          <div class="project-meta">
+            <span class="project-tag">Dave Inc.</span>
+            <span class="project-tag">System Design</span>
+            <span class="project-tag">Fintech</span>
+            <span class="project-tag">Banking Partnership</span>
+          </div>
+          <h3>ExtraCash Funding Facility — Coastal Community Bank</h3>
+          <p>
+            Provided data support and contributed to system design for Dave's strategic funding facility with
+            Coastal Community Bank, live June 2026. Designed the purchase/buy logic enabling ExtraCash receivables
+            to be originated and funded through Coastal, shifting Dave off direct balance sheet exposure and
+            unlocking <strong>~$200M in liquidity</strong>. Worked cross-functionally with the software engineering
+            team on data contracts, pipeline architecture, and reconciliation flows supporting the new funding model.
+          </p>
+          <p class="project-news">
+            <a href="https://www.globenewswire.com/news-release/2026/06/09/3309317/0/en/dave-begins-funding-extracash-originations-through-coastal-community-bank.html" target="_blank">Press release &rarr;</a>
+          </p>
         </div>
-        <h3>ExtraCash Funding Facility — Coastal Community Bank</h3>
-        <p>
-          Provided data support and contributed to system design for Dave's strategic funding facility with
-          Coastal Community Bank, live June 2026. Designed the purchase/buy logic enabling ExtraCash receivables
-          to be originated and funded through Coastal, shifting Dave off direct balance sheet exposure and
-          unlocking <strong>~$200M in liquidity</strong>. Worked cross-functionally with the software engineering
-          team on data contracts, pipeline architecture, and reconciliation flows supporting the new funding model.
-        </p>
-        <p class="project-news">
-          <a href="https://www.globenewswire.com/news-release/2026/06/09/3309317/0/en/dave-begins-funding-extracash-originations-through-coastal-community-bank.html" target="_blank">Press release &rarr;</a>
-        </p>
       </div>
 
     </section>
