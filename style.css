@@ -30,6 +30,27 @@ header {
   padding-right: calc(50vw - 50%);
 }
 
+header.hero {
+  background:
+    linear-gradient(rgba(6, 12, 28, 0.6), rgba(6, 12, 28, 0.8)),
+    url("images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+header.hero .header-text h1 {
+  color: #fff;
+}
+
+header.hero .tagline {
+  color: #cbd5e1;
+}
+
+header.hero .profile-photo {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
 .header-inner {
   display: flex;
   align-items: center;
