@@ -84,6 +84,40 @@ header.hero .profile-photo {
   letter-spacing: 1px;
 }
 
+.greeting {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 0.4rem;
+}
+
+.greeting .word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px) scale(0.75);
+  animation: word-pop-in 0.45s ease forwards;
+}
+
+.greeting .bold-name {
+  font-weight: 800;
+  color: #fff;
+}
+
+@keyframes word-pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.08);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .header-text h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -164,6 +198,25 @@ h2 {
 
 section p + p {
   margin-top: 0.75rem;
+}
+
+/* Home CTAs */
+.home-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+.cta-link {
+  color: #0066cc;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
 }
 
 /* Experience */
