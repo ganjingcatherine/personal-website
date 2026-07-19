@@ -16,22 +16,21 @@
 
   <header class="hero">
     <div class="header-inner">
-      <div class="profile-photo">
-        <img src="working.png" alt="Jing Gan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-        <div class="photo-initials">JG</div>
-      </div>
-      <div class="header-text">
-        <p class="greeting">
-          <span class="word" style="animation-delay:0.05s">Hi,</span>
-          <span class="word" style="animation-delay:0.2s">I'm</span>
-          <span class="word bold-name" style="animation-delay:0.35s">Jing</span><span class="word" style="animation-delay:0.35s">&mdash;</span>
-          <span class="word" style="animation-delay:0.5s">great</span>
-          <span class="word" style="animation-delay:0.65s">to</span>
-          <span class="word" style="animation-delay:0.8s">meet</span>
-          <span class="word" style="animation-delay:0.95s">you.</span>
+      <div class="hero-greeting">
+        <p class="greeting greeting-line">
+          <span class="word" style="animation-delay:0.05s">Hello,</span>
+          <span class="word" style="animation-delay:0.2s">I</span>
+          <span class="word" style="animation-delay:0.35s">am</span>
+          <span class="word bold-name" style="animation-delay:0.5s">Jing</span>
+          <span class="word bold-name" style="animation-delay:0.65s">Gan.</span>
+          <span class="word" style="animation-delay:2.15s">Nice</span>
+          <span class="word" style="animation-delay:2.3s">to</span>
+          <span class="word" style="animation-delay:2.45s">meet</span>
+          <span class="word" style="animation-delay:2.6s">you.</span>
         </p>
-        <h1>Jing Gan</h1>
+
         <p class="tagline">Data Analytics Leader &middot; Fintech &middot; AI</p>
+
         <div class="header-links">
           <a href="mailto:jing.gan123@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/jgan/" target="_blank">LinkedIn</a>
@@ -42,10 +41,19 @@
   </header>
 
   <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="interests.html">Interests</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" class="brand">
+      <span class="brand-mark">
+        <img src="working.png" alt="Jing Gan" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <span class="brand-initials">JG</span>
+      </span>
+      Jing Gan
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="interests.html">Interests</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
   <main>
@@ -185,6 +193,31 @@
   <footer>
     <p>&copy; 2026 Jing Gan</p>
   </footer>
+
+  <script>
+    function wait(ms) {
+      return new Promise(function (resolve) { setTimeout(resolve, ms); });
+    }
+
+    async function runGreeting() {
+      var line = document.querySelector('.greeting-line');
+      if (!line) return;
+
+      var POP_TOTAL_MS = 3100;
+      var SECOND_PAUSE_MS = 20000;
+      var LOOPS = 4;
+
+      for (var i = 0; i < LOOPS; i++) {
+        line.classList.add('active');
+        await wait(POP_TOTAL_MS + SECOND_PAUSE_MS);
+        line.classList.remove('active');
+      }
+
+      line.classList.add('active');
+    }
+
+    runGreeting();
+  </script>
 
 </body>
 </html>

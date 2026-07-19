@@ -16,7 +16,7 @@ body {
 
 /* Header */
 header {
-  padding: 3rem 0 2rem;
+  padding: 5rem 0 4.5rem;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 0;
   background:
@@ -32,8 +32,8 @@ header {
 
 header.hero {
   background:
-    linear-gradient(rgba(6, 12, 28, 0.6), rgba(6, 12, 28, 0.8)),
-    url("images/hero-bg.jpg");
+    linear-gradient(rgba(6, 12, 28, 0.35), rgba(6, 12, 28, 0.55)),
+    url("images/header-banner.jpg");
   background-size: cover;
   background-position: center;
   border-bottom-color: rgba(255, 255, 255, 0.15);
@@ -48,19 +48,26 @@ header.hero .tagline {
 }
 
 header.hero .profile-photo {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+  background: #0a0a0a;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-greeting {
+  flex: 0 1 60%;
+  min-width: 0;
 }
 
 .profile-photo {
   flex-shrink: 0;
-  width: 150px;
-  height: 150px;
+  margin-left: auto;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
   background: #0066cc;
@@ -85,17 +92,30 @@ header.hero .profile-photo {
 }
 
 .greeting {
-  font-size: 1.05rem;
+  font-size: 1.7rem;
   font-weight: 500;
+  line-height: 1.3;
   color: #cbd5e1;
-  margin-bottom: 0.4rem;
+  white-space: nowrap;
+  margin-bottom: 1.2rem;
 }
 
-.greeting .word {
+.greeting-line {
+  display: none;
+}
+
+.greeting-line.active {
+  display: block;
+}
+
+.greeting-line .word {
   display: inline-block;
   opacity: 0;
   transform: translateY(10px) scale(0.75);
-  animation: word-pop-in 0.45s ease forwards;
+}
+
+.greeting-line.active .word {
+  animation: word-pop-in 0.5s ease forwards;
 }
 
 .greeting .bold-name {
@@ -118,6 +138,10 @@ header.hero .profile-photo {
   }
 }
 
+.hero-greeting .header-links {
+  margin-top: 1.1rem;
+}
+
 .header-text h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -131,7 +155,7 @@ header.hero .profile-photo {
 
 .header-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.9rem;
   flex-wrap: wrap;
 }
 
@@ -143,6 +167,7 @@ header.hero .profile-photo {
   padding: 0.3rem 0.85rem;
   border-radius: 4px;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .header-links a:hover {
@@ -152,7 +177,10 @@ header.hero .profile-photo {
 /* Nav */
 nav {
   display: flex;
-  gap: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
   padding: 1rem 0;
   border-bottom: 1px solid #e0e0e0;
   margin-bottom: 2.5rem;
@@ -160,6 +188,56 @@ nav {
   top: 0;
   background: #fff;
   z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #111;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #0066cc;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-initials {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -508,7 +586,16 @@ footer {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.2rem;
+    gap: 1.5rem;
+  }
+
+  .greeting {
+    font-size: 1.1rem;
+    white-space: normal;
+  }
+
+  .header-links {
+    align-items: flex-start;
   }
 
   .job-header {
